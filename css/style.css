@@ -21,7 +21,7 @@
 }
 
 * {
-  /*	border: 1px solid red;	*/
+  /*border: 1px solid red;	*/
   box-sizing: border-box;
 }
 
@@ -71,7 +71,56 @@ body {
   background-image: url("../images/hero_bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: end;
+      align-items: flex-end;
+  padding-bottom: 50px;
   height: 80vh;
+}
+
+.hero .container {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+}
+
+.go-down {
+  -ms-flex-align: center;
+      align-items: center;
+  border-radius: 50%;
+  background-color: #d75e3f;
+  color: white;
+  cursor: pointer;
+  display: -ms-flexbox;
+  display: flex;
+  height: 80px;
+  /*border: 2px solid $second-solor;*/
+  -ms-flex-pack: center;
+      justify-content: center;
+  width: 80px;
+}
+
+.go-down:hover {
+  background-color: #1f7e5c;
+}
+
+.go-down .fa-angle-double-down {
+  font-size: 24px;
+  /*		do zmiany 		!!!*/
+}
+
+.container {
+  margin: 0 auto;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+}
+
+.content {
+  width: 80%;
 }
 
 /*niepotrzebne*/
@@ -107,7 +156,7 @@ body {
 
 .tab-section .tab-content {
   background-color: white;
-  padding: 30px 70px;
+  /*padding: 30px 70px;*/
   margin: 10px 0 0 0;
   text-align: justify;
 }
