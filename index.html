@@ -11,7 +11,9 @@
   
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css" type="text/css">
+
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
   <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -89,9 +91,22 @@
           </p>
           
         </div>
+        <!-- The Modal -->
+          <div id="menu2Modal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img01">
+            <div id="caption"></div>
+          </div>
         <div id="menu2" class="tab-pane fade">
           <h3>Education and courses</h3>
             <hr>
+              <img alt="Kodilla certyficat" src="images/kodilla-certyficate-small.jpg" id="myImg">
+            
+            
+            <h4><strong>2018 - KODILLA - Programing Shool.</strong></h4>
+            <p>Bootcamp Online. Front-End Developer</p>
+            
+
             <ul>
               <li><i class="fas fa-arrow-circle-right"></i> <strong> 2018 - KODILLA - Programing Shool.</strong>
                   Bootcamp Online. Front-End Developer</li>
@@ -168,8 +183,8 @@
               <li><i class="fas fa-check"></i>SCSS</li>
               <li><i class="fas fa-check"></i>JavaScript</li>
             </ul>
-            <button>View online</button>
-            <button>See on Github</button>
+            <button class="btn btn-success">View online</button>
+            <button class="btn btn-warning">See on Github</button>
           </div>
           <div class="col-12 line"><hr></div>
         </div>
@@ -179,17 +194,23 @@
     </div>
   </section>
   
+
   <section class="footer">
     <div class="container-fluid">
       <div class="copyright">© copyright 2018, all right reserved</div>
     </div>
   </section>
   
+<!-- jquery -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+
+<!-- bootstrap -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 
 <!-- responsive bootstrap tabs-->
 <script src="https://cdn.rawgit.com/InventPartners/bootstrap-responsive-tabs/master/jquery.responsivetabs.js"></script>
+
+<script type="text/javascript" src="js/script.js"></script>
 <script>
 $(function() {
   $('.nav-tabs').responsiveTabs();

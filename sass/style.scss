@@ -10,6 +10,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: white;
+  font-family: 'Lato', sans-serif;
 }
 .container {
   margin: 0 auto;
@@ -111,6 +112,9 @@ body {
       display: flex;
       justify-content: center;
     }
+    h2{
+      font-weight: bold;
+    }
     hr {
       /*color: $light-color;*/
       background: $light-color;
@@ -120,7 +124,7 @@ body {
       width: 75%;
     }
   ul{
-    margin: 0;
+    margin: 0  0 10px 0;
     padding: 0;    
   }
   li {
@@ -131,16 +135,20 @@ body {
     filter: brightness(1.5);
     margin-right: 5px;
   }
-  button {
+/*  button {
     border-radius: 5px;
     box-shadow: none;
     border: none;
     background-color: red;
     color: white;
-    /*display: block;*/
     font-size: $button-font-size;
     margin: 10px 0 0 0;
     padding: 4px 20px;
+    width: 150px;
+  }*/
+  button {
+    padding: 4px 20px;
+    font-size: $button-font-size;
     width: 150px;
   }
   }

@@ -4,7 +4,6 @@
   "main": "index.js",
   "scripts": {
     "test": "npm-run-all test:*",
-    "test:html": "globstar nu-html-checker *.html",
     "test:js": "jshint js/",
     "init-project": "npm install && npm-run-all init:*",
     "init:dirs": "mkdirp sass css vendor images js",
@@ -13,7 +12,6 @@
     "build": "npm-run-all build:* test",
     "build:clean": "rimraf css/*.css css/*.map",
     "build:sass": "node-sass --output-style compact -o css sass",
-    
     "build:autoprefixer": "autoprefixer-cli css/style.css",
     "build-dev:sass": "node-sass --output-style expanded --source-map true -o css sass",
     "watch": "npm-run-all build -p watch:*",
