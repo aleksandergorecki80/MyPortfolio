@@ -187,7 +187,26 @@ body {
 
 /*    Contact section   */
 
-.contact-me {  
+.contact-me {
+  .contact-data {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .photo-of-me {
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+  }
+  .media-icons {
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+    .contact-icon {
+      font-size: 1.5em;
+    }
+  }
   form {
     input, textarea {
       background-color: #f2f2f2;

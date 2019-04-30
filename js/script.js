@@ -8,7 +8,7 @@ var imagesLinks = {
 };
 // Get the modal
 var modal = document.getElementById('menu2Modal');
-var modalOverlay = document.getElementById('modalOverlay')
+var modalOverlay = document.getElementById('modalOverlay');
 
 // Get the image and insert it inside the modal - use its "alt" text as a caption
 var img = document.getElementById('myImg');

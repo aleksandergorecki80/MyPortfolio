@@ -534,6 +534,35 @@ body {
 }
 
 /*    Contact section   */
+.contact-me .contact-data {
+  -ms-flex-align: center;
+      align-items: center;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: center;
+      justify-content: center;
+}
+
+.contact-me .photo-of-me {
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+}
+
+.contact-me .media-icons {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 60%;
+}
+
+.contact-me .media-icons .contact-icon {
+  font-size: 1.5em;
+}
+
 .contact-me form input, .contact-me form textarea {
   background-color: #f2f2f2;
   border: none;
