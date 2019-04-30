@@ -2,6 +2,8 @@
 @import '_variables.scss';
 @import '_animations.scss';
 @import '_grid.scss';
+@import '_mixins.scss';
+
 * {
   /*border: 1px solid red;	*/
   box-sizing: border-box;
@@ -92,6 +94,37 @@ body {
   }
 }
 
+/*  About me*/
+.education-courses {
+  text-align: center;
+}
+
+
+
+/*  Courses modal */
+.courses-modal {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 100%;
+  max-height: 100%;
+  width: 700px;
+  z-index: 1010;
+}
+.modal-overlay {
+  background: rgba(0, 0, 0, 0.6);
+  display: none;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top:0;
+  
+  width: 100%;
+  
+  z-index: 1000;
+}
 
 /*		My projects section 		*/
 
@@ -147,13 +180,41 @@ body {
     width: 150px;
   }*/
   button {
-    padding: 4px 20px;
-    font-size: $button-font-size;
-    width: 150px;
+    @include myButton();
   }
   }
 }
 
+/*    Contact section   */
+
+.contact-me {  
+  form {
+    input, textarea {
+      background-color: #f2f2f2;
+      border: none;
+      margin-bottom: 10px;
+      float: left;
+      padding: 10px;
+    }
+  input {
+    width: 49%;
+  }
+  input:nth-child(2){
+    float: right;
+  }
+  input:nth-child(3){
+    width: 100%;
+  }
+  textarea {
+    height: 100px;
+    resize: none;
+    width: 100%;
+  }
+  button {
+    @include myButton();
+  }
+  }
+}
 
 
 /*niepotrzebne*/
@@ -177,6 +238,7 @@ body {
   background-image: url(https://images.unsplash.com/photo-1499571883643-44e68963973d?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=fe6dcad08b550ac64434e734039df9f4&auto=format&fit=crop&w=875&q=80);
 }
 /*do tąd*/
+
 
 .tab-section .container {
   margin-top: 20px;

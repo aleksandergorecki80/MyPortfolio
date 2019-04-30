@@ -3,11 +3,12 @@ console.log("Hello world");
 /*		MODAL 		*/
 
 // Large images
-const imagesLinks = {
+var imagesLinks = {
 	img01: "images/kodilla-certyficate-big.jpg"
 };
 // Get the modal
 var modal = document.getElementById('menu2Modal');
+var modalOverlay = document.getElementById('modalOverlay')
 
 // Get the image and insert it inside the modal - use its "alt" text as a caption
 var img = document.getElementById('myImg');
@@ -15,6 +16,7 @@ var modalImg = document.getElementById("img01");
 var captionText = document.getElementById("caption");
 img.onclick = function(){
   modal.style.display = "block";
+  modalOverlay.style.display = 'block';
   // modalImg.src = this.src;
   modalImg.src = imagesLinks.img01;
   captionText.innerHTML = this.alt;
@@ -26,4 +28,5 @@ var span = document.getElementsByClassName("close")[0];
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() { 
   modal.style.display = "none";
+  modalOverlay.style.display = "none";
 };
