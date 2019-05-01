@@ -197,6 +197,7 @@ body {
   .photo-of-me {
     border-radius: 50%;
     height: 100px;
+    margin: 10px 0 20px 0;
     width: 100px;
   }
   .media-icons {
@@ -204,16 +205,24 @@ body {
     justify-content: space-around;
     width: 60%;
     .contact-icon {
-      font-size: 1.5em;
+      font-size: 1.8em;
+      color: $first-solor
+    }
+  a:hover .contact-icon {
+    color: $second-solor;
     }
   }
   form {
     input, textarea {
       background-color: #f2f2f2;
       border: none;
+      border-radius: 5px;
       margin-bottom: 10px;
       float: left;
       padding: 10px;
+      &:focus{
+        box-shadow: 0px 0px 5px 0px rgba(74,74,74,1);
+      }
     }
   input {
     width: 49%;

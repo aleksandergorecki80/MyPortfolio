@@ -548,6 +548,7 @@ body {
 .contact-me .photo-of-me {
   border-radius: 50%;
   height: 100px;
+  margin: 10px 0 20px 0;
   width: 100px;
 }
 
@@ -560,15 +561,25 @@ body {
 }
 
 .contact-me .media-icons .contact-icon {
-  font-size: 1.5em;
+  font-size: 1.8em;
+  color: #d75e3f;
+}
+
+.contact-me .media-icons a:hover .contact-icon {
+  color: #1f7e5c;
 }
 
 .contact-me form input, .contact-me form textarea {
   background-color: #f2f2f2;
   border: none;
+  border-radius: 5px;
   margin-bottom: 10px;
   float: left;
   padding: 10px;
+}
+
+.contact-me form input:focus, .contact-me form textarea:focus {
+  box-shadow: 0px 0px 5px 0px #4a4a4a;
 }
 
 .contact-me form input {
