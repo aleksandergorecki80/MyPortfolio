@@ -2,7 +2,7 @@
 @media (max-width: 767px){ 	
 	.navbar {
 		margin-bottom: 0;
-		min-height: 50px;
+		min-height: 72px	!important;	
 	}
 	
 	.navbar-nav > li > a {
@@ -20,5 +20,9 @@
 	.navbar-brand {
 		line-height: 0;
 		padding: 0 0 0 10px;
+	}
+	.navbar-collapse {
+		/*	dodane teraz przezemnie do wersji na komure		*/
+		margin-top: 20px;
 	}
 }
