@@ -43,5 +43,14 @@
 		button {
 			margin-bottom: 10px;
 		}
+		.content {
+			width: 100%;
+		}
+	}
+	.footer {
+		.container-fluid{
+			padding-right: 0;
+			padding-left: 0;
+		}
 	}
 }
