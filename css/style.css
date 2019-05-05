@@ -26,6 +26,17 @@
   .tab-section .container .content {
     width: 100%;
   }
+  .tab-section .nav-tabs {
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .tab-section .nav-tabs li:nth-child(2) {
+    -ms-flex-positive: 1;
+        flex-grow: 1;
+  }
+  .my-projects button {
+    margin-bottom: 10px;
+  }
 }
 
 .go-down:hover .fa-angle-double-down {
@@ -440,6 +451,34 @@ body {
 }
 
 /*  About me*/
+.tab-section img {
+  max-width: 100%;
+}
+
+.tab-section .certyficat {
+  cursor: pointer;
+  margin-top: 25px;
+}
+
+.tab-section .courses-modal span {
+  font-size: 26px;
+  color: #dddddd;
+  background-color: #1f7e5c;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  opacity: 1;
+  transform: translate(0, 30%);
+  z-index: 2000;
+  text-shadow: none;
+}
+
+.tab-section .courses-modal span:hover {
+  opacity: 1;
+  background-color: #15553e;
+}
+
 .education-courses {
   text-align: center;
 }
@@ -674,6 +713,7 @@ body {
 
 .nav-tabs {
   border-bottom: 1px solid #d75e3f;
+  max-width: 360px;
 }
 
 .nav-tabs > li a {

@@ -31,5 +31,16 @@
 				width: 100%;
 			}
 		}
+		.nav-tabs {
+			display: flex;
+			li:nth-child(2) {
+				flex-grow: 1;
+			}
+		}
+	}
+	.my-projects {
+		button {
+			margin-bottom: 10px;
+		}
 	}
 }

@@ -96,6 +96,34 @@ body {
 }
 
 /*  About me*/
+.tab-section {
+  img {
+    max-width: 100%;
+  }
+  .certyficat {
+    cursor: pointer;
+    margin-top: 25px; 
+  }
+  .courses-modal {
+    span {
+      font-size: 26px;
+      color: $light-color;
+      background-color: $second-solor;
+      border-radius: 50%;
+      width: 30px;
+      height: 30px;
+      text-align: center;
+      opacity: 1;
+      transform: translate(0,30%);
+      z-index: 2000;
+      text-shadow: none;
+      &:hover {
+        opacity: 1;
+        background-color: darken($second-solor, 10%);
+      };
+    }
+  }
+}
 .education-courses {
   text-align: center;
 }
@@ -121,9 +149,7 @@ body {
   left: 0;
   position: fixed;
   top:0;
-  
   width: 100%;
-  
   z-index: 1000;
 }
 
@@ -297,6 +323,7 @@ body {
 }
 .nav-tabs {
   border-bottom: 1px solid #d75e3f;
+  max-width: 360px;
 }
 .nav-tabs>li a {
   color: white;
