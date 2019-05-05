@@ -33,6 +33,7 @@
 		}
 		.nav-tabs {
 			display: flex;
+			max-width: 360px;
 			li:nth-child(2) {
 				flex-grow: 1;
 			}
