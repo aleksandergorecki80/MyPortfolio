@@ -33,9 +33,14 @@
 		}
 		.nav-tabs {
 			display: flex;
-			max-width: 360px;
+			/*max-width: 360px;*/
 			li:nth-child(2) {
-				flex-grow: 1;
+				flex-grow: 0.8;
+				text-align: center;
+			}
+			li:nth-child(1), li:nth-child(3) {
+				flex-grow: 0.2;
+				text-align: center;
 			}
 		}
 	}

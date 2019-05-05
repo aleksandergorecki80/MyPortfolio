@@ -29,11 +29,17 @@
   .tab-section .nav-tabs {
     display: -ms-flexbox;
     display: flex;
-    max-width: 360px;
+    /*max-width: 360px;*/
   }
   .tab-section .nav-tabs li:nth-child(2) {
-    -ms-flex-positive: 1;
-        flex-grow: 1;
+    -ms-flex-positive: 0.8;
+        flex-grow: 0.8;
+    text-align: center;
+  }
+  .tab-section .nav-tabs li:nth-child(1), .tab-section .nav-tabs li:nth-child(3) {
+    -ms-flex-positive: 0.2;
+        flex-grow: 0.2;
+    text-align: center;
   }
   .my-projects button {
     margin-bottom: 10px;
@@ -502,7 +508,7 @@ body {
   transform: translate(-50%, -50%);
   max-width: 100%;
   max-height: 100%;
-  width: 700px;
+  /*width: 700px;*/
   z-index: 1010;
 }
 
