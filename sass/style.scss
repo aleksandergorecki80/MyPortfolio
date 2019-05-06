@@ -100,11 +100,26 @@ body {
   img {
     max-width: 100%;
   }
+
+.education-courses {
+  text-align: center;
+}
   .certyficat {
     cursor: pointer;
     margin-top: 25px; 
   }
+
+/*  Courses modal */
   .courses-modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 100%;
+    max-height: 100%;
+    width: 700px;
+    z-index: 1010;
     span {
       font-size: 26px;
       color: $light-color;
@@ -124,26 +139,14 @@ body {
         background-color: darken($second-solor, 10%);
       };
     }
+    img {
+      width: 100%;
+      max-height: 80vh;
+      object-fit: contain;
+    }
   }
 }
-.education-courses {
-  text-align: center;
-}
 
-
-
-/*  Courses modal */
-.courses-modal {
-  display: none;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  max-width: 100%;
-  max-height: 100%;
-  /*width: 700px;*/
-  z-index: 1010;
-}
 .modal-overlay {
   background: rgba(0, 0, 0, 0.6);
   display: none;

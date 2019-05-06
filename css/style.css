@@ -465,13 +465,33 @@ body {
 }
 
 /*  About me*/
+.tab-section {
+  /*  Courses modal */
+}
+
 .tab-section img {
   max-width: 100%;
+}
+
+.tab-section .education-courses {
+  text-align: center;
 }
 
 .tab-section .certyficat {
   cursor: pointer;
   margin-top: 25px;
+}
+
+.tab-section .courses-modal {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 100%;
+  max-height: 100%;
+  width: 700px;
+  z-index: 1010;
 }
 
 .tab-section .courses-modal span {
@@ -495,21 +515,11 @@ body {
   background-color: #15553e;
 }
 
-.education-courses {
-  text-align: center;
-}
-
-/*  Courses modal */
-.courses-modal {
-  display: none;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  max-width: 100%;
-  max-height: 100%;
-  /*width: 700px;*/
-  z-index: 1010;
+.tab-section .courses-modal img {
+  width: 100%;
+  max-height: 80vh;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .modal-overlay {
