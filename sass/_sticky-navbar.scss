@@ -1,0 +1,33 @@
+
+.stick {
+  position: fixed;
+  width: 100%;
+  z-index: 3000;
+  min-height: 20px !important;
+}
+
+.sticky-buttons {
+  padding-top: 15px !important;
+  padding-bottom: 15px !important;
+}
+
+.sticky-navbar-brand {
+	padding: 0 0 0 15px !important;
+}
+
+.my-logo {
+	width: 160px !important;
+	margin-top: -10px;
+}
+
+.my-logo:hover {
+	width: 160px !important;	
+}
+
+.animation {
+	transition: all 0.5s ease;
+}
+
+.logo-up-animation {
+	-webkit-transition: all 0.5s 0.1s ease;
+}

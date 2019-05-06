@@ -21,11 +21,11 @@
 <body>
 
 <!--    navigation bar    -->
-  <nav class="navbar navbar-inverse">
+  <nav class="navbar navbar-inverse" id="topNavbar">
     <div class="container-fluid">
       <div class="navbar-header">
-        <div class="navbar-brand">
-          <a href='#' ><img src='https://svgshare.com/i/5qp.svg' title='' /></a>
+        <div class="navbar-brand" id="navbarBrand">
+          <a href='#' ><img src='https://svgshare.com/i/5qp.svg' title='Aleksander Gorecki' id="myLogo" class="logo"></a>
         </div>
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
           <span class="icon-bar"></span>
@@ -35,10 +35,10 @@
       </div>
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav navbar-right ">
-          <li class="active"><a href="#">Home</a></li>
-          <li><a href="#" id="aboutMe">About me</a></li>
-          <li><a href="#" id="myProjects">Portfolio</a></li>
-          <li><a href="#" id="contactMe">Contact</a></li>
+          <li class="active"><a id="home" class="main-menu">Home</a></li>
+          <li><a id="aboutMe" class="main-menu">About me</a></li>
+          <li><a id="myProjects" class="main-menu">Portfolio</a></li>
+          <li><a id="contactMe" class="main-menu">Contact</a></li>
         </ul>
       </div>
     </div>
@@ -221,6 +221,8 @@
 
 <script type="text/javascript" src="js/script.js"></script>
 <script type="text/javascript" src="js/menuScroll.js"></script>
+<script type="text/javascript" src="js/stickyNavbar.js"></script>
+
 <!-- <script>
 $(function() {
   $('.nav-tabs').responsiveTabs();

@@ -1,7 +1,17 @@
+/*jshint esversion: 6 */ 
+  $("#home").click(() => {
+    $("html, body").animate(
+      {
+        scrollTop: $(".hero").offset().top
+      },
+      600
+    );
+  });
+
   $("#aboutMe, #goDown").click(() => {
     $("html, body").animate(
       {
-        scrollTop: $(".about-me").offset().top
+        scrollTop: $(".tab-section").offset().top -60
       },
       600
     );
@@ -9,7 +19,7 @@
   $("#myProjects").click(() => {
     $("html, body").animate(
       {
-        scrollTop: $(".my-projects").offset().top
+        scrollTop: $(".my-projects").offset().top -40
       },
       600
     );
