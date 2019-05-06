@@ -36,9 +36,9 @@
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav navbar-right ">
           <li class="active"><a href="#">Home</a></li>
-          <li><a href="#">About me</a></li>
-          <li><a href="#">Portfolio</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#" id="aboutMe">About me</a></li>
+          <li><a href="#" id="myProjects">Portfolio</a></li>
+          <li><a href="#" id="contactMe">Contact</a></li>
         </ul>
       </div>
     </div>
@@ -48,7 +48,7 @@
 
   <section class="hero">
     <div class="container">
-      <div class="go-down"><i class="fas fa-angle-double-down"></i></div>
+      <div class="go-down" id="goDown"><i class="fas fa-angle-double-down"></i></div>
     </div>
   </section>
 
@@ -58,7 +58,7 @@
 
 
 
-     <div class="content">
+     <div class="content about-me">
       <ul class="nav nav-tabs">
         <li class="active"><a href="#menu1" data-toggle="tab">Career</a></li>
         <li><a href="#menu2" data-toggle="tab">Education and courses</a></li>
@@ -220,6 +220,7 @@
 <!-- <script src="https://cdn.rawgit.com/InventPartners/bootstrap-responsive-tabs/master/jquery.responsivetabs.js"></script> -->
 
 <script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript" src="js/menuScroll.js"></script>
 <!-- <script>
 $(function() {
   $('.nav-tabs').responsiveTabs();
