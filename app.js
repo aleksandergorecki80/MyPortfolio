@@ -30,9 +30,9 @@ app.post('/send', (req, res) => {
 
 	//	Walidation by @hapi/joi
 	const schema = {
-		name: Joi.string().alphanum().min(3).max(30).required().trim(),
+		name: Joi.string().regex(/^[a-zA-Z0-9 .!?"-]+$/).min(3).max(30).required().trim(),
 		email: Joi.string().email({ minDomainAtoms: 2 }),
-		subject: Joi.string().min(3).max(30).trim(),
+		subject: Joi.string().regex(/^[a-zA-Z0-9 .!?"-]+$/).min(3).max(30).trim(),
 		message: Joi.string()
 	};
 
@@ -41,8 +41,8 @@ app.post('/send', (req, res) => {
 	if (result.error) {
 		// res.status(400).send(result.error.details[0].message);
 		res.render('contact', {msg: result.error.details[0].message});
-	}
-
+	} else {
+		
 	//create a message
 	const output = `
 		<p>You have a new contact request</p>
@@ -56,42 +56,44 @@ app.post('/send', (req, res) => {
 		<p>${req.body.message}</p>
 	`;
 	
-	console.log(result);
+	console.log(output);
 
 	// //sending a message
  //  // create reusable transporter object using the default SMTP transport
- //  let transporter = nodemailer.createTransport({
- //    host: 'aleksandergorecki.com',
- //    port: 587,
- //    secure: false, // true for 465, false for other ports
- //    auth: {
- //        user: 'contact@aleksandergorecki.com', // generated ethereal user
- //        pass: 'SCub_or_2MZel'  // generated ethereal password
- //    },
- //    tls:{
- //      rejectUnauthorized:false
- //    }	// tylko dla localhosta
- //  });
+  let transporter = nodemailer.createTransport({
+    host: 'aleksandergorecki.com',
+    port: 587,
+    secure: false, // true for 465, false for other ports
+    auth: {
+        user: 'contact@aleksandergorecki.com', // generated ethereal user
+        pass: 'SCub_or_2MZel'  // generated ethereal password
+    },
+    tls:{
+      rejectUnauthorized:false
+    }	// tylko dla localhosta
+  });
 
- //  // setup email data with unicode symbols
- //  let mailOptions = {
- //      from: '"Nodemailer Contact" <contact@aleksandergorecki.com>', // sender address
- //      to: 'aleksandergorecki80@gmail.com', // list of receivers
- //      subject: 'Node Contact Request', // Subject line
- //      text: 'Hello world?', // plain text body
- //      html: output // html body
- //  };
+  // setup email data with unicode symbols
+  let mailOptions = {
+      from: '"Nodemailer Contact" <contact@aleksandergorecki.com>', // sender address
+      to: 'aleksandergorecki80@gmail.com', // list of receivers
+      subject: 'Node Contact Request', // Subject line
+      text: 'Hello world?', // plain text body
+      html: output // html body
+  };
 
- //  // send mail with defined transport object
- //  transporter.sendMail(mailOptions, (error, info) => {
- //      if (error) {
- //          return console.log(error);
- //      }
- //      console.log('Message sent: %s', info.messageId);   
- //      console.log('Preview URL: %s', nodemailer.getTestMessageUrl(info));
+  // send mail with defined transport object
+  transporter.sendMail(mailOptions, (error, info) => {
+      if (error) {
+          return console.log(error);
+      }
+      console.log('Message sent: %s', info.messageId);   
+      console.log('Preview URL: %s', nodemailer.getTestMessageUrl(info));
 
- //      res.render('contact', {msg:'Email has been sent'});
- //  });
+      res.render('contact', {msg:'Email has been sent'});
+  });
+	}
+
 
 });
 
