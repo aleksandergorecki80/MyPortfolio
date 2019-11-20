@@ -1,8 +1,9 @@
 {
   "name": "npm",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
+     "start": "node app.js",
     "test": "npm-run-all test:*",
     "test:js": "jshint js/",
     "init-project": "npm install && npm-run-all init:*",
