@@ -3,7 +3,7 @@
 /*		MODAL 		*/
 
 // Large images
-var imagesLinks = ["images/kodilla-certyficate-big.jpg", "images/ocr-certyficate-big.jpg", "images/edexcel-certyficate-big.jpg"];
+var imagesLinks = ["public/images/kodilla-certyficate-big.jpg", "public/images/ocr-certyficate-big.jpg", "public/images/edexcel-certyficate-big.jpg"];
 // Get the modal
 var modal = document.getElementById('menu2Modal');
 var modalOverlay = document.getElementById('modalOverlay');
