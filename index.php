@@ -41,6 +41,10 @@
         $msgClass = 'alert-success';
 
         // Clearing the form
+        $name = '';
+        $email = '';
+        $subject = '';
+        $message = '';
       } else {
         // Failed
         $msg = 'Your email has not been sent.';
