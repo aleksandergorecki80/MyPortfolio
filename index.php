@@ -1,47 +1,58 @@
 <?php
-$placeholder='To jest placeholder';
   $msg = '';
   $msgClass = '';
 
   //Check for Submit
   if(filter_has_var(INPUT_POST, 'submit')){
-    echo 'Submited';
-  }
 
-  $name = $_POST['name'];
-  $email = $_POST['email'];
-  $subject = $_POST['subject'];
-  $message = $_POST['message'];
+  $name = htmlspecialchars($_POST['name']);
+  $email = htmlspecialchars($_POST['email']);
+  $subject = htmlspecialchars($_POST['subject']);
+  $message = htmlspecialchars($_POST['message']);
 
 
   if(!empty($email) && !empty($name) && !empty($subject) && !empty($message)){
     //Passed
-    echo 'PASSED';
     // Check Email
     if(filter_var($email, FILTER_VALIDATE_EMAIL) === false){
       $msg = 'Please use a valid email';
       $msgClass = 'alert-danger';
     } else {
       //Passed
-      echo "Email crect";
+      //Sending email
+      $toEmail = 'aleksandergorecki80@gmail.com';
+      $subject = 'Contact request from'.$name;
+      $body = '<h2>Contact request</h2>
+                <h4>Name:</h4><p>'.$name.'</p>
+                <h4>Email:</h4><p>'.$email.'</p>
+                <h4>Message:</h4><p>'.$message.'</p>
+                ';
+      //Email headers
+      $headers = "MIME-Version: 1.0" . "\r\n";
+      $headers .= "Content-type:text/html; charset=UTF-8" . "\r\n";
+
+      //Additional Headers
+      $headers .= "From: " .$name. "<" .$email. ">" . "\r\n";
+
+      // Mail function
+      if(mail($toEmail, $subject, $body, $headers)) {
+        // Email sent
+        $msg = 'Your email has been sent.';
+        $msgClass = 'alert-success';
+
+        // Clearing the form
+      } else {
+        // Failed
+        $msg = 'Your email has not been sent.';
+        $msgClass = 'alert-danger';
+      }
     }
-
-
-    echo $name."<br>";
-    echo $message."<br>";
-    echo $email."<br>";
-    echo $subject."<br>";
-
-
   } else {
     // Failed
     $msg = 'Please fill in all fields';
     $msgClass = 'alert-danger';
   }
-
-
-  
-
+}
 ?>
 
 <!DOCTYPE HTML>
@@ -56,7 +67,7 @@ $placeholder='To jest placeholder';
   <meta name="keywords" content="słowa, kluczowe, wypisane, po, porzecinku" />
   
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/style_111.css" type="text/css">
+  <link rel="stylesheet" href="css/style.css" type="text/css">
 
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
@@ -250,7 +261,7 @@ $placeholder='To jest placeholder';
           value="<?php echo isset($_POST['email']) ? $email : ''; ?>">
           <input type="text" name="subject" placeholder="Subject"
           value="<?php echo isset($_POST['subject']) ? $subject : ''; ?>">
-          <textarea placeholder="Message" name='message'><?php echo isset($_POST['message']) ? $message : 'Message'?></textarea>
+          <textarea placeholder="Message" name='message'><?php echo isset($_POST['message']) ? $message : ''?></textarea>
           <button id="submitButton" name="submit" class="btn btn-success" >Send</button>
         </form>
       </div>
