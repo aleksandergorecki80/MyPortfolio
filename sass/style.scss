@@ -282,6 +282,9 @@ body {
     resize: none;
     width: 100%;
   }
+  .input-error {
+    border: 1px solid red !important;
+  }
   button {
     @include myButton();
   }

@@ -256,6 +256,8 @@ body { margin: 20px 0 0 0; padding: 0; background-color: white; font-family: 'La
 
 .contact-me form textarea { height: 100px; resize: none; width: 100%; }
 
+.contact-me form .input-error { border: 1px solid red !important; }
+
 .contact-me form button { padding: 4px 20px; font-size: 0.9em; width: 150px; }
 
 /*niepotrzebne*/
