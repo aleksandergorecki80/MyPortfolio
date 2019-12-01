@@ -39,3 +39,4 @@ var stickIt = function(){
 
 window.addEventListener("scroll", stickIt);
 
+

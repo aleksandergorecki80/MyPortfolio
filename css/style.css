@@ -151,7 +151,7 @@
 
 .animation { transition: all 0.5s ease; }
 
-.logo-up-animation { -webkit-transition: all 0.5s 0.1s ease; }
+.logo-up-animation { transition: all 0.5s 0.1s ease; }
 
 * { /*border: 1px solid red;	*/ box-sizing: border-box; }
 

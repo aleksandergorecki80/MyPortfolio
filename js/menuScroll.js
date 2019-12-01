@@ -25,7 +25,6 @@
     );
   });
     $("#contactMe").click(() => {
-      console.log('ccc');
     $("html, body").animate(
       {
         scrollTop: $(".contact-me").offset().top
@@ -33,5 +32,11 @@
       600
     );
   });
-
-  
+  $("#myLogo").click(() => {
+    $("html, body").animate(
+      {
+        scrollTop: $(".hero").offset().top
+      },
+      600
+    );
+  });

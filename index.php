@@ -94,7 +94,7 @@
           <span class="icon-bar"></span>
         </button>  
       </div>
-      <div class="collapse navbar-collapse" id="myNavbar">
+      <div class="collapse navbar-collapse animation" id="myNavbar">
         <ul class="nav navbar-nav navbar-right ">
           <li class="active"><a id="home" class="main-menu">Home</a></li>
           <li><a id="aboutMe" class="main-menu">About me</a></li>
@@ -289,7 +289,9 @@
 
 <script type="text/javascript" src="js/script.js"></script>
 <script type="text/javascript" src="js/menuScroll.js"></script>
+<script type="text/javascript" src="js/closeMenu.js"></script>
 <script type="text/javascript" src="js/stickyNavbar.js"></script>
+<script type="text/javascript" src="js/validation.js"></script>
 
 
 </body>
