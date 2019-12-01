@@ -259,7 +259,7 @@
         <?php endif?>
 
         <form id="contact" action="<?php echo $_SERVER['PHP_SELF']; ?>#contact" method="post">
-          <input type="text" name="name" placeholder="Name"
+          <input type="text" name="name" placeholder="Name" minlength="3"
             value="<?php echo isset($_POST['name']) ? $name : ''; ?>">
           <input type="email" name="email" placeholder="Email"
           value="<?php echo isset($_POST['email']) ? $email : ''; ?>">
