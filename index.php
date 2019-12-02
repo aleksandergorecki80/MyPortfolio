@@ -259,13 +259,14 @@
         <?php endif?>
 
         <form id="contact" action="<?php echo $_SERVER['PHP_SELF']; ?>#contact" method="post">
-          <input type="text" name="name" placeholder="Name"
+          <input type="text" name="name" placeholder="Name" id="name"
             value="<?php echo isset($_POST['name']) ? $name : ''; ?>">
-          <input type="email" name="email" placeholder="Email"
+            <span>span</span>
+          <input type="email" name="email" placeholder="Email" id="email"
           value="<?php echo isset($_POST['email']) ? $email : ''; ?>">
-          <input type="text" name="subject" placeholder="Subject"
+          <input type="text" name="subject" placeholder="Subject" id="subject"
           value="<?php echo isset($_POST['subject']) ? $subject : ''; ?>">
-          <textarea placeholder="Message" name='message'><?php echo isset($_POST['message']) ? $message : ''?></textarea>
+          <textarea placeholder="Message" name='message' id="message"><?php echo isset($_POST['message']) ? $message : ''?></textarea>
           <button id="submitButton" name="submit" class="btn btn-success" >Send</button>
         </form>
       </div>
