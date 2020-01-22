@@ -73,6 +73,8 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css" type="text/css">
 
+  <link rel="stylesheet" href="css2/style2.css" type="text/css">
+
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
   <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
@@ -261,11 +263,13 @@
         <form id="contact" action="<?php echo $_SERVER['PHP_SELF']; ?>#contact" method="post">
           <input type="text" name="name" placeholder="Name" id="name"
             value="<?php echo isset($_POST['name']) ? $name : ''; ?>">
-            <span>span</span>
+            <span></span>
           <input type="email" name="email" placeholder="Email" id="email"
           value="<?php echo isset($_POST['email']) ? $email : ''; ?>">
+          <span></span>
           <input type="text" name="subject" placeholder="Subject" id="subject"
           value="<?php echo isset($_POST['subject']) ? $subject : ''; ?>">
+          <span></span>
           <textarea placeholder="Message" name='message' id="message"><?php echo isset($_POST['message']) ? $message : ''?></textarea>
           <button id="submitButton" name="submit" class="btn btn-success" >Send</button>
         </form>
