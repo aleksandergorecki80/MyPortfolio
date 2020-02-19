@@ -12,7 +12,6 @@ const contactForm = document.getElementById('contact');
 const green = '#4AF50';
 const red = '#F44336';
 
-console.log('name' , name);
 name.addEventListener('keyup', validateName);
 email.addEventListener('keyup', validateEmail);
 subject.addEventListener('keyup', validateSubject);

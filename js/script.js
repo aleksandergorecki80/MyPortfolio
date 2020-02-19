@@ -34,16 +34,16 @@ var openModal = function(index){
 };
 
 // Click the smal certificate
-imgs[0].onclick = function(){
-		openModal(0);
-	};
+// imgs[0].onclick = function(){
+// 		openModal(0);
+// 	};
 
-imgs[1].onclick = function(){
-		openModal(1);
-	};
-imgs[2].onclick = function(){
-		openModal(2);
-	};
+// imgs[1].onclick = function(){
+// 		openModal(1);
+// 	};
+// imgs[2].onclick = function(){
+// 		openModal(2);
+// 	};
 
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];

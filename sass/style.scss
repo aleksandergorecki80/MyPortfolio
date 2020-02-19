@@ -109,7 +109,10 @@ body {
   }
 
 .education-courses {
-  text-align: center;
+  text-align: left;
+  p {
+    margin-bottom: 20px; 
+  }
 }
   .certyficat {
     cursor: pointer;

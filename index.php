@@ -73,9 +73,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css" type="text/css">
 
-  <link rel="stylesheet" href="css2/style2.css" type="text/css">
-
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
   <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -123,9 +121,8 @@
 
      <div class="content about-me">
       <ul class="nav nav-tabs">
-        <li class="active"><a href="#menu1" data-toggle="tab">Career</a></li>
+        <li class="active"><a href="#menu1" data-toggle="tab">Summary</a></li>
         <li><a href="#menu2" data-toggle="tab">Education and courses</a></li>
-        <li><a href="#menu3" data-toggle="tab">Hobby</a></li>
       </ul>       
          
     
@@ -133,26 +130,13 @@
       <!-- My career -->
       <div class="tab-content">
         <div id="menu1" class="tab-pane fade in active">
-          <h3>My career path.</h3>
+          <h3>About me.</h3>
           <hr>
-          <p>I have been interested in web technologies for long, but I have treated it as a hobby.</p>
-          <p>I started my career in local radio.I worked there as a graphic
-              designer and I also developed some content on a company website using a CMS system. 
-              But my duty was mostly related to graphick designing. 
-          </p>
-          <p>After that I my career path went to the printing industry. I worked for publishing house Jedność.
-              My responsibilities it was taking files from customers checking them and
-              preparing to print. I was also operating a digital printer, XEROX.</p>
-          <p>In 2010 I decided to start my own business and I worked as a freelancer. I was making orders for advertising
-              agency and small printing houses mostly.</p>
-          <p>Since 2012 to 2013 I was working in the printing house Speedruk as a
-              graphic designer. I was also preparing the printing sheets and I was making the printing plates.</p>
-          <p> I have strong skills to following software Adobe; InDesign, Illustrator,
-              Photoshop. I have knowledge and experience of print productions.
-              Recently my passion for web coding came back to me. I decided to take  it seriously and 
-              make it my career. That is why I have enroled to a Kodilla course. In the future I am going to work as a Front End Developer. 
-          </p>
-          
+          <p>I have been interested in web technologies for long, but I have been treated it as a hobby.</p>
+          <p>After many occupations I worked in I realised that only programming is worth exploring. 
+          The more I learn about coding the more fascinating it becomes for me. 
+          Therefore I decided to turn my passion into profession and start a career as a developer.</p>
+          <p>Below you will find projects I have completed that demonstrate my skills and background in developing.</p>
         </div>
 
         <!-- The Modal -->
@@ -169,32 +153,17 @@
         <div id="menu2" class="tab-pane fade education-courses">
           <h3>Education and courses</h3>
             <hr>
-              <img alt="Kodilla certyficat" src="images/kodilla-certyficate-small.jpg" class="certyficat">
+              <h4><strong>2005-2009 - Stanislaw Stasic University of Arts & Sciences in Kielce, Poland.</strong></h4>
+              <p> Majoring in Computer Graphics.</p>              
+              
               <h4><strong>2018 - KODILLA - Programing Shool.</strong></h4>
-              <p>Bootcamp Online. Front-End Developer</p>
-            
-              <img alt="OCR Functional Skills qualification in English at Level 2" src="images/ocr-certyficate-small.jpg" class="certyficat">
+              <p>Online Bootcamp. Front-End Developer</p>
+
               <h4><strong>2016 - Greenlands Business Centre, Redditch.</strong></h4>
               <p>OCR Functional Skills qualification in English at Level 2.</p>
 
-              <img alt="Edexcel Level 1" src="images/edexcel-certyficate-small.jpg" class="certyficat">
               <h4><strong>2014 - 2015 - Heart of Worcester College, Redditch.</strong></h4>
               <p>Edexcel Level 1 in ESOL Skills for Life</p>
-            <ul>
-              <li><i class="fas fa-arrow-circle-right"></i> <strong>2005-2009 - Stanislaw Stasic University of Arts & Sciences in Kielce, Poland.</strong>
-              Majoring in Computer Graphics.</li>
-            </ul>
-          
-        </div>
-
-        <!--  Hobby -->
-        <div id="menu3" class="tab-pane fade">
-          <h3>Leisure time</h3>
-          <hr>
-            <p>I rather like to spend my time being active.
-              Recently I spent most of my free time coding with Kodilla. </p>
-            <p>My second passion is english. I learn with online platform E-tutor. Once of the week I also practice my conversation skils on private sessions</p>
-            <p>When I don't learn I am a fan of road trips.</p>
         </div>
       </div>
      </div>
@@ -205,7 +174,32 @@
     <div class="container">
       <h3>MY PROJECTS</h3>
       <div class="content">
-        <div class="sinngle-project">
+        <div class="sinngle-project">   <!-- Battleship -->
+          <div class="col-7 col-s-12">
+            <img alt="Battleship" src="images/batleship.jpg">
+          </div>
+          <div class="col-5 col-s-12">
+            <h2>Battleship</h2>
+            <h4>Javascript Web Game</h4>
+            <ul>
+              <li><i class="fas fa-check"></i>HTML 5</li>
+              <li><i class="fas fa-check"></i>JavaScript ES5/ES6</li>
+                <ul>
+                  <li>- objects</li>
+                  <li>- classes</li>
+                  <li>- inheritance</li>
+                </ul>
+            </ul>
+            <a href="https://aleksandergorecki80.github.io/Battleship-2.0/" target="_blank">
+              <button class="btn btn-success">View online</button>
+            </a>
+            <a href="https://github.com/aleksandergorecki80/Battleship-2.0" target="_blank">
+              <button class="btn btn-warning">See on Github</button>
+            </a>
+          </div>
+          <div class="col-12 line"><hr></div>
+        </div>
+        <div class="sinngle-project">   <!-- AVAX -->
           <div class="col-7 col-s-12">
             <img alt="AVAX - mock landing page" src="images/avax-img-responsive.jpg">
           </div>
@@ -227,7 +221,49 @@
           </div>
           <div class="col-12 line"><hr></div>
         </div>
-
+        <div class="sinngle-project">   <!-- Rock, paper, scisors, lizard, Spock -->
+          <div class="col-7 col-s-12">
+            <img alt="Rock, Paper, Scissors, Lizard, Spock" src="images/rock-paper-scisors.jpg">
+          </div>
+          <div class="col-5 col-s-12">
+            <h2>Rock, Paper, Scissors, Lizard, Spock</h2>
+            <h4>Javascript Web Game</h4>
+            <ul>
+              <li><i class="fas fa-check"></i>HTML 5</li>
+              <li><i class="fas fa-check"></i>Javascript</li>
+              <li><i class="fas fa-check"></i>Bootstrap</li>
+            </ul>
+            <a href="https://aleksandergorecki80.github.io/9_7a__Play_with_Dr-Sheldon-Cooper/" target="_blank">
+              <button class="btn btn-success">View online</button>
+            </a>
+            <a href="https://github.com/aleksandergorecki80/9_7a__Play_with_Dr-Sheldon-Cooper" target="_blank">
+              <button class="btn btn-warning">See on Github</button>
+            </a>
+          </div>
+          <div class="col-12 line"><hr></div>
+        </div>
+        <div class="sinngle-project">   <!-- GOLD -->
+          <div class="col-7 col-s-12">
+            <img alt="GOLDEN - mock landing page" src="images/gold-img-responsive.jpg">
+          </div>
+          <div class="col-5 col-s-12">
+            <h2>GOLDEN</h2>
+            <h4>Mock-up landing page</h4>
+            <ul>
+              <li><i class="fas fa-check"></i>Responsiwe design</li>
+              <li><i class="fas fa-check"></i>HTML 5</li>
+              <li><i class="fas fa-check"></i>SCSS</li>
+              <li><i class="fas fa-check"></i>JavaScript</li>
+            </ul>
+            <a href="https://aleksandergorecki80.github.io/7_7__GOLDEN_landing_page/" target="_blank">
+              <button class="btn btn-success">View online</button>
+            </a>
+            <a href="https://github.com/aleksandergorecki80/7_7__GOLDEN_landing_page" target="_blank">
+              <button class="btn btn-warning">See on Github</button>
+            </a>
+          </div>
+          <div class="col-12 line"><hr></div>
+        </div>
       </div>
 
     </div>
