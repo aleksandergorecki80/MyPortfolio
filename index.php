@@ -174,7 +174,31 @@
     <div class="container">
       <h3>MY PROJECTS</h3>
       <div class="content">
-        <div class="sinngle-project">   <!-- Battleship -->
+      <div class="sinngle-project">   <!-- Blog Justyny -->
+          <div class="col-7 col-s-12">
+            <img alt="Blog Justyny" src="images/blog-justyny.jpg">
+          </div>
+          <div class="col-5 col-s-12">
+            <h2>Blog Justyny</h2>
+            <h4>Web page with recipes</h4>
+            <ul>
+              <li><i class="fas fa-check"></i>Laravel</li>
+              <li><i class="fas fa-check"></i>VUE.js</li>
+              <li><i class="fas fa-check"></i>PHP</li>
+              <li><i class="fas fa-check"></i>JavaScript</li>
+              <li><i class="fas fa-check"></i>SCSS</li>
+            </ul>
+            <a href="https://blogjustyny.pl/" target="_blank">
+              <button class="btn btn-success">blogjustyny.pl</button>
+            </a>
+            <a href="https://github.com/aleksandergorecki80/cakes" target="_blank">
+              <button class="btn btn-warning">See on Github</button>
+            </a>
+          </div>
+          <div class="col-12 line"><hr></div>
+        </div>
+
+      <div class="sinngle-project">   <!-- Battleship -->
           <div class="col-7 col-s-12">
             <img alt="Battleship" src="images/batleship.jpg">
           </div>
@@ -237,6 +261,27 @@
               <button class="btn btn-success">View online</button>
             </a>
             <a href="https://github.com/aleksandergorecki80/9_7a__Play_with_Dr-Sheldon-Cooper" target="_blank">
+              <button class="btn btn-warning">See on Github</button>
+            </a>
+          </div>
+          <div class="col-12 line"><hr></div>
+        </div>
+        <div class="sinngle-project">   <!-- SUDOKU -->
+          <div class="col-7 col-s-12">
+            <img alt="Sudoku" src="images/sudoku.jpg">
+          </div>
+          <div class="col-5 col-s-12">
+            <h2>SUDOKU</h2>
+            <h4>React game</h4>
+            <ul>
+              <li><i class="fas fa-check"></i>React</li>
+              <li><i class="fas fa-check"></i>Webpack</li>
+              <li><i class="fas fa-check"></i>NPM</li>
+            </ul>
+            <a href="https://aleksandergorecki80.github.io/17_8_Sudoku_game/" target="_blank">
+              <button class="btn btn-success">View online</button>
+            </a>
+            <a href="https://github.com/aleksandergorecki80/17_8_Sudoku_game" target="_blank">
               <button class="btn btn-warning">See on Github</button>
             </a>
           </div>
